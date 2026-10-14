@@ -93,3 +93,15 @@ This is because each element in one matrix must have a corresponding element in 
 
 For example, a 2 × 2 matrix cannot be added to a 2 × 3 matrix because their dimensions are different.
 
+
+$$
+\boxed{A+B=\begin{pmatrix}5&0\\-1&8\end{pmatrix}}
+$$
+
+$$
+\boxed{A-B=\begin{pmatrix}-3&4\\-1&-2\end{pmatrix}}
+$$
+
+$$
+\boxed{3A-2B=\begin{pmatrix}-5&10\\-3&-1\end{pmatrix}}
+$$
