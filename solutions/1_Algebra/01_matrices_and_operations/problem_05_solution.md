@@ -1,6 +1,3 @@
-
-# Exercise 5: Matrix-Vector Multiplication
-
 ## Given
 
 $$
