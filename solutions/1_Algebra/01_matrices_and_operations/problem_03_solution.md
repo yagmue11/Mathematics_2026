@@ -1,119 +1,20 @@
-## Given
+### Solution
 
-$$
-A_{2\times3},\quad B_{3\times4},\quad
-C_{4\times2},\quad D_{2\times2}
-$$
+The matrix product is defined if and only if the number of columns in the first matrix equals the number of rows in the second matrix. If a matrix of size $m \times n$ is multiplied by a matrix of size $n \times p$, the resulting matrix has size $m \times p$.
 
-## Rule
-
-Matrix multiplication is defined when the number of columns
-of the first matrix equals the number of rows of the second.
-
-$$
-(m\times n)(n\times p)=(m\times p)
-$$
-
-The inner dimensions must match, and the outer dimensions
-determine the size of the resulting matrix.
-
-## 1. AB
-
-$$
-AB=(2\times3)(3\times4)
-$$
-
-Since 3 = 3, multiplication is defined.
-
-$$
-\boxed{AB: 2\times4}
-$$
-
-## 2. BA
-
-$$
-BA=(3\times4)(2\times3)
-$$
-
-Since 4 ≠ 2, multiplication is not defined.
-
-## 3. BC
-
-$$
-BC=(3\times4)(4\times2)
-$$
-
-Since 4 = 4, multiplication is defined.
-
-$$
-\boxed{BC: 3\times2}
-$$
-
-## 4. CB
-
-$$
-CB=(4\times2)(3\times4)
-$$
-
-Since 2 ≠ 3, multiplication is not defined.
-
-## 5. AC
-
-$$
-AC=(2\times3)(4\times2)
-$$
-
-Since 3 ≠ 4, multiplication is not defined.
-
-## 6. CA
-
-$$
-CA=(4\times2)(2\times3)
-$$
-
-Since 2 = 2, multiplication is defined.
-
-$$
-\boxed{CA: 4\times3}
-$$
-
-## 7. AD
-
-$$
-AD=(2\times3)(2\times2)
-$$
-
-Since 3 ≠ 2, multiplication is not defined.
-
-## 8. DA
-
-$$
-DA=(2\times2)(2\times3)
-$$
-
-Since 2 = 2, multiplication is defined.
-
-$$
-\boxed{DA: 2\times3}
-$$
-
-## Final Answers
-
-| Product | Defined? | Result Size |
-|---------|----------|-------------|
-| AB | Yes | 2 × 4 |
-| BA | No | — |
-| BC | Yes | 3 × 2 |
-| CB | No | — |
-| AC | No | — |
-| CA | Yes | 4 × 3 |
-| AD | No | — |
-| DA | Yes | 2 × 3 |
-
-## Conclusion
-
-Matrix multiplication is possible only when the number
-of columns in the first matrix equals the number of rows
-in the second matrix.
-
-The size of the result is determined by the outer dimensions.
+* **Product $AB$**
+Defined. Matrix $A$ has $3$ columns and matrix $B$ has $3$ rows ($3 = 3$). The resulting matrix size is $2 \times 4$.
+* **Product $BA$**
+Undefined. Matrix $B$ has $4$ columns and matrix $A$ has $2$ rows ($4 \neq 2$).
+* **Product $BC$**
+Defined. Matrix $B$ has $4$ columns and matrix $C$ has $4$ rows ($4 = 4$). The resulting matrix size is $3 \times 2$.
+* **Product $CB$**
+Undefined. Matrix $C$ has $2$ columns and matrix $B$ has $3$ rows ($2 \neq 3$).
+* **Product $AC$**
+Undefined. Matrix $A$ has $3$ columns and matrix $C$ has $4$ rows ($3 \neq 4$).
+* **Product $CA$**
+Defined. Matrix $C$ has $2$ columns and matrix $A$ has $2$ rows ($2 = 2$). The resulting matrix size is $4 \times 3$.
+* **Product $AD$**
+Undefined. Matrix $A$ has $3$ columns and matrix $D$ has $2$ rows ($3 \neq 2$).
+* **Product $DA$**
+Defined. Matrix $D$ has $2$ columns and matrix $A$ has $2$ rows ($2 = 2$). The resulting matrix size is $2 \times 3$.

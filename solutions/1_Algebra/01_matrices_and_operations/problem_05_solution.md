@@ -1,175 +1,23 @@
-## Given
+### Solution
 
-$$
-A=\begin{pmatrix}
-2 & -1\\
-1 & 3
-\end{pmatrix},
-\qquad
-x=\begin{pmatrix}
-4\\
-2
-\end{pmatrix}
-$$
+**1. Computation of $Ax$**
 
-## 1. Calculate Ax
+$$Ax = \begin{pmatrix} 2 & -1 \\ 1 & 3 \\ \end{pmatrix} \begin{pmatrix} 4 \\ 2 \\ \end{pmatrix}$$
 
-Multiply each row of matrix A by the column vector x.
+Multiplying the rows of $A$ by the vector $x$ yields:
 
-$$
-Ax=
-\begin{pmatrix}
-2 & -1\\
-1 & 3
-\end{pmatrix}
-\begin{pmatrix}
-4\\
-2
-\end{pmatrix}
-$$
+$$Ax = \begin{pmatrix} 2(4) + (-1)(2) \\ 1(4) + 3(2) \\ \end{pmatrix} = \begin{pmatrix} 6 \\ 10 \\ \end{pmatrix}$$
 
-$$
-Ax=
-\begin{pmatrix}
-(2)(4)+(-1)(2)\\
-(1)(4)+(3)(2)
-\end{pmatrix}
-$$
+**2. Linear Combination of Columns**
 
-Simplifying:
+The columns of matrix $A$ are the vectors:
 
-$$
-Ax=
-\begin{pmatrix}
-8-2\\
-4+6
-\end{pmatrix}
-$$
+$$c_1 = \begin{pmatrix} 2 \\ 1 \\ \end{pmatrix}, \qquad c_2 = \begin{pmatrix} -1 \\ 3 \\ \end{pmatrix}$$
 
-**Answer:**
+The entries of the vector $x$ serve as the scalar coefficients. Expressing $Ax$ as a linear combination of the columns gives:
 
-$$
-\boxed{
-Ax=\begin{pmatrix}
-6\\
-10
-\end{pmatrix}
-}
-$$
+$$Ax = 4 \begin{pmatrix} 2 \\ 1 \\ \end{pmatrix} + 2 \begin{pmatrix} -1 \\ 3 \\ \end{pmatrix}$$
 
-## 2. Express Ax as a Linear Combination
+Evaluating this sum confirms the previous result:
 
-The columns of matrix A are:
-
-$$
-a_1=\begin{pmatrix}
-2\\
-1
-\end{pmatrix},
-\qquad
-a_2=\begin{pmatrix}
--1\\
-3
-\end{pmatrix}
-$$
-
-The coefficients come from vector x:
-
-$$
-x=\begin{pmatrix}
-4\\
-2
-\end{pmatrix}
-$$
-
-Therefore, Ax can be written as:
-
-$$
-Ax=4a_1+2a_2
-$$
-
-Substituting the column vectors:
-
-$$
-Ax=
-4\begin{pmatrix}
-2\\
-1
-\end{pmatrix}
-+
-2\begin{pmatrix}
--1\\
-3
-\end{pmatrix}
-$$
-
-Multiply each vector by its coefficient:
-
-$$
-Ax=
-\begin{pmatrix}
-8\\
-4
-\end{pmatrix}
-+
-\begin{pmatrix}
--2\\
-6
-\end{pmatrix}
-$$
-
-Adding the vectors:
-
-$$
-\boxed{
-Ax=\begin{pmatrix}
-6\\
-10
-\end{pmatrix}
-}
-$$
-
-## Final Answers
-
-**Matrix-vector multiplication:**
-
-$$
-\boxed{
-Ax=\begin{pmatrix}
-6\\
-10
-\end{pmatrix}
-}
-$$
-
-**Linear combination of the columns of A:**
-
-$$
-\boxed{
-Ax=
-4\begin{pmatrix}
-2\\
-1
-\end{pmatrix}
-+
-2\begin{pmatrix}
--1\\
-3
-\end{pmatrix}
-=
-\begin{pmatrix}
-6\\
-10
-\end{pmatrix}
-}
-$$
-
-## Conclusion
-
-Matrix-vector multiplication can be expressed as a
-linear combination of the columns of the matrix.
-
-The coefficients are the corresponding entries
-of the vector x.
-
-In this example, the coefficients are 4 and 2.
+$$Ax = \begin{pmatrix} 8 \\ 4 \\ \end{pmatrix} + \begin{pmatrix} -2 \\ 6 \\ \end{pmatrix} = \begin{pmatrix} 6 \\ 10 \\ \end{pmatrix}$$
