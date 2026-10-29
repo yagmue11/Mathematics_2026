@@ -1,3 +1,15 @@
+### Exercise 6. Transpose of a Product
+
+For
+
+$$A= \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ \end{pmatrix},\qquad B= \begin{pmatrix} 1 & 0 \\ 2 & 1 \\ -1 & 3 \\ \end{pmatrix}$$
+
+compute $A^T$, $B^T$, and $AB$. Then verify in this example that
+
+$$(AB)^T=B^TA^T.$$
+
+---
+
 ### Solution
 
 **1. Computation of $A^T$ and $B^T$**
@@ -40,6 +52,10 @@ $$B^T A^T = \begin{pmatrix} 2 & 8 \\ 11 & 23 \\ \end{pmatrix}$$
 
 Comparing the matrices from steps 2 and 3:
 
-$$ (AB)^T = \begin{pmatrix} 2 & 8 \ 11 & 23 \ \end{pmatrix} = B^T A^T $$
+$$(AB)^T = \begin{pmatrix} 2 & 8 \\ 11 & 23 \\ \end{pmatrix}$$
+
+and
+
+$$B^T A^T = \begin{pmatrix} 2 & 8 \\ 11 & 23 \\ \end{pmatrix}$$
 
 This verifies that $(AB)^T = B^T A^T$ holds true for this example.

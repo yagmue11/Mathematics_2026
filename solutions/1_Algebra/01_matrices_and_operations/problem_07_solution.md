@@ -1,3 +1,15 @@
+### Exercise 7. Matrix Powers and Identities
+
+For
+
+$$A= \begin{pmatrix} 2 & 1 \\ 0 & 2 \\ \end{pmatrix}$$
+
+compute
+
+$$AI,\qquad IA,\qquad A+0,\qquad A^2,\qquad A^3.$$
+
+Explain the roles of the matrices $I$ and $0$, and describe the pattern you observe in successive powers of $A$.
+
 ### Solution
 
 **1. Computations involving the Identity and Zero Matrices**

@@ -1,3 +1,15 @@
+### Exercise 10. Column-by-Column Matrix Product
+
+Given
+
+$$A= \begin{pmatrix} 1 & 2 & 0 \\ 0 & 1 & 1 \\ \end{pmatrix},\qquad B= \begin{pmatrix} 1 & 2 \\ -1 & 0 \\ 3 & 1 \\ \end{pmatrix}.$$
+
+Denote the columns of $B$ by $b_1,b_2$.
+
+1. Compute $Ab_1$ and $Ab_2$.
+2. Compute the matrix $AB$.
+3. Compare the results and explain why the columns of $AB$ are exactly the vectors $Ab_1$ and $Ab_2$.
+
 ### Solution
 
 **1. Computation of $Ab_1$ and $Ab_2$**

@@ -1,3 +1,11 @@
+### Exercise 5. Matrix-Vector Product
+
+Let
+
+$$A= \begin{pmatrix} 2 & -1 \\ 1 & 3 \\ \end{pmatrix},\qquad x= \begin{pmatrix} 4 \\ 2 \\ \end{pmatrix}.$$
+
+Compute $Ax$. Then express $Ax$ as a linear combination of the columns of $A$, with coefficients coming from the vector $x$.
+
 ### Solution
 
 **1. Computation of $Ax$**

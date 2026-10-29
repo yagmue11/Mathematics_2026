@@ -1,3 +1,15 @@
+### Exercise 3. Matrix Multiplication Dimensions
+
+The matrix sizes are
+
+$$A_{2\times3},\qquad B_{3\times4},\qquad C_{4\times2},\qquad D_{2\times2}.$$
+
+For the products
+
+$$AB,\ BA,\ BC,\ CB,\ AC,\ CA,\ AD,\ DA$$
+
+determine whether they are defined. If so, state the size of the result. Justify each decision using the dimension compatibility condition.
+
 ### Solution
 
 The matrix product is defined if and only if the number of columns in the first matrix equals the number of rows in the second matrix. If a matrix of size $m \times n$ is multiplied by a matrix of size $n \times p$, the resulting matrix has size $m \times p$.
