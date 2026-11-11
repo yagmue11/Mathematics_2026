@@ -1,4 +1,15 @@
 ### Exercise 13. Does Every Equation Add New Information?
+Consider the system
+
+$$
+x_1+x_2=10,\qquad x_2+x_3=8,\qquad x_1-x_3=2.
+$$
+
+Solve it and check whether all three equations are independently necessary to describe the solution set. If one follows from the others, show this by calculation.
+
+> **Why this exercise:** teaches how to recognize redundant equations within a system.
+
+### Exercise 13. Solution
 
 Subtracting the second equation from the first gives
 

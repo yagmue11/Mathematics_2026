@@ -1,4 +1,17 @@
 ### Exercise 12. Homogeneous System
+Solve
+
+$$
+\begin{cases}
+x+2y-z=0, \\
+2x+4y-2z=0, \\
+x-y+2z=0.
+\end{cases}
+$$
+
+Give all solutions in parametric form and explain why $(0,0,0)$ always satisfies a homogeneous system.
+
+### Exercise 12. Solution
 
 The second equation is twice the first. Subtracting the first equation from the third reduces the system to
 

@@ -2,7 +2,13 @@
 
 Compute
 
-$$\det \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 4 \\ 1 & 4 & 6 \\ \end{pmatrix}$$
+$$
+\det \begin{pmatrix}
+1 & 2 & 3 \\
+1 & 3 & 4 \\
+1 & 4 & 6
+\end{pmatrix}
+$$
 
 by first performing row operations that create as many zeros as possible. State which operations do not change the determinant.
 
@@ -12,13 +18,25 @@ by first performing row operations that create as many zeros as possible. State 
 
 To simplify the calculation, create zeros in the first column below the first entry.
 
-* **Step 1:** Replace Row 2 with $R_2 - R_1$.
+- **Step 1:** Replace Row 2 with $R_2 - R_1$.
 
-$$\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 1 \\ 1 & 4 & 6 \\ \end{pmatrix}$$
+$$
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 1 \\
+1 & 4 & 6
+\end{pmatrix}
+$$
 
-* **Step 2:** Replace Row 3 with $R_3 - R_1$.
+- **Step 2:** Replace Row 3 with $R_3 - R_1$.
 
-$$\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 1 \\ 0 & 2 & 3 \\ \end{pmatrix}$$
+$$
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 1 \\
+0 & 2 & 3
+\end{pmatrix}
+$$
 
 **2. State which operations do not change the determinant**
 
@@ -28,6 +46,14 @@ The operation used in both steps is adding a scalar multiple of one row to anoth
 
 Using cofactor expansion along the first column of the simplified matrix:
 
-$$\det \begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 1 \\ 0 & 2 & 3 \\ \end{pmatrix} = 1 \cdot (1 \cdot 3 - 1 \cdot 2) - 0 + 0$$
+$$
+\det \begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 1 \\
+0 & 2 & 3
+\end{pmatrix} = 1 \cdot (1 \cdot 3 - 1 \cdot 2) - 0 + 0
+$$
 
-$$\det A = 3 - 2 = 1$$
+$$
+\det A = 3 - 2 = 1
+$$

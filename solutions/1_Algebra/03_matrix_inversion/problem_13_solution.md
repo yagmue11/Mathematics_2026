@@ -2,7 +2,17 @@
 
 The matrices
 
-$$S= \begin{pmatrix} 2 & 0 \\ 0 & 1 \\ \end{pmatrix},\qquad H= \begin{pmatrix} 1 & 1 \\ 0 & 1 \\ \end{pmatrix}$$
+$$
+S = \begin{pmatrix}
+2 & 0 \\
+0 & 1
+\end{pmatrix}
+,\qquad
+H = \begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}
+$$
 
 describe nonuniform scaling and shear. For $T=HS$, find $T^{-1}$ in two ways:
 
@@ -17,33 +27,116 @@ Compare the results. Additionally compute $H^{-1}S^{-1}$ and verify that the inc
 
 Calculate the composite matrix $T = HS$:
 
-$$\begin{aligned} T &= \begin{pmatrix} 1 & 1 \\ 0 & 1 \\ \end{pmatrix} \begin{pmatrix} 2 & 0 \\ 0 & 1 \\ \end{pmatrix} \\ &= \begin{pmatrix} 1(2) + 1(0) & 1(0) + 1(1) \\ 0(2) + 1(0) & 0(0) + 1(1) \\ \end{pmatrix} \\ &= \begin{pmatrix} 2 & 1 \\ 0 & 1 \\ \end{pmatrix} \end{aligned}$$
+$$
+\begin{aligned}
+T &= \begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+2 & 0 \\
+0 & 1
+\end{pmatrix} \\
+&= \begin{pmatrix}
+1(2) + 1(0) & 1(0) + 1(1) \\
+0(2) + 1(0) & 0(0) + 1(1)
+\end{pmatrix} \\
+&= \begin{pmatrix}
+2 & 1 \\
+0 & 1
+\end{pmatrix}
+\end{aligned}
+$$
 
 Next, compute the inverse $T^{-1}$. The determinant is $\det T = 2(1) - 1(0) = 2$. Using the explicit formula for a $2 \times 2$ inverse:
 
-$$\begin{aligned} T^{-1} &= \frac{1}{2} \begin{pmatrix} 1 & -1 \\ 0 & 2 \\ \end{pmatrix} \\ &= \begin{pmatrix} \frac{1}{2} & -\frac{1}{2} \\ 0 & 1 \\ \end{pmatrix} \end{aligned}$$
+$$
+\begin{aligned}
+T^{-1} &= \frac{1}{2} \begin{pmatrix}
+1 & -1 \\
+0 & 2
+\end{pmatrix} \\
+&= \begin{pmatrix}
+\frac{1}{2} & -\frac{1}{2} \\
+0 & 1
+\end{pmatrix}
+\end{aligned}
+$$
 
 **2. Method 2: Use $(HS)^{-1} = S^{-1}H^{-1}$**
 
 Compute the individual inverses $S^{-1}$ and $H^{-1}$. The determinant of $S$ is $2$, and the determinant of $H$ is $1$.
 
-$$S^{-1}= \begin{pmatrix} \frac{1}{2} & 0 \\ 0 & 1 \\ \end{pmatrix},\qquad H^{-1}= \begin{pmatrix} 1 & -1 \\ 0 & 1 \\ \end{pmatrix}$$
+$$
+S^{-1} = \begin{pmatrix}
+\frac{1}{2} & 0 \\
+0 & 1
+\end{pmatrix}
+,\qquad
+H^{-1} = \begin{pmatrix}
+1 & -1 \\
+0 & 1
+\end{pmatrix}
+$$
 
 Multiply $S^{-1}$ and $H^{-1}$ in that specific order:
 
-$$\begin{aligned} S^{-1}H^{-1} &= \begin{pmatrix} \frac{1}{2} & 0 \\ 0 & 1 \\ \end{pmatrix} \begin{pmatrix} 1 & -1 \\ 0 & 1 \\ \end{pmatrix} \\ &= \begin{pmatrix} \frac{1}{2}(1) + 0(0) & \frac{1}{2}(-1) + 0(1) \\ 0(1) + 1(0) & 0(-1) + 1(1) \\ \end{pmatrix} \\ &= \begin{pmatrix} \frac{1}{2} & -\frac{1}{2} \\ 0 & 1 \\ \end{pmatrix} \end{aligned}$$
+$$
+\begin{aligned}
+S^{-1}H^{-1} &= \begin{pmatrix}
+\frac{1}{2} & 0 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 & -1 \\
+0 & 1
+\end{pmatrix} \\
+&= \begin{pmatrix}
+\frac{1}{2}(1) + 0(0) & \frac{1}{2}(-1) + 0(1) \\
+0(1) + 1(0) & 0(-1) + 1(1)
+\end{pmatrix} \\
+&= \begin{pmatrix}
+\frac{1}{2} & -\frac{1}{2} \\
+0 & 1
+\end{pmatrix}
+\end{aligned}
+$$
 
 **3. Compare the results**
 
 Both methods yield the exact same matrix:
 
-$$T^{-1} = S^{-1}H^{-1} = \begin{pmatrix} \frac{1}{2} & -\frac{1}{2} \\ 0 & 1 \\ \end{pmatrix}$$
+$$
+T^{-1} = S^{-1}H^{-1} = \begin{pmatrix}
+\frac{1}{2} & -\frac{1}{2} \\
+0 & 1
+\end{pmatrix}
+$$
 
 **4. Compute $H^{-1}S^{-1}$ and verify the incorrect order**
 
 Multiply the inverses in the unreversed order:
 
-$$\begin{aligned} H^{-1}S^{-1} &= \begin{pmatrix} 1 & -1 \\ 0 & 1 \\ \end{pmatrix} \begin{pmatrix} \frac{1}{2} & 0 \\ 0 & 1 \\ \end{pmatrix} \\ &= \begin{pmatrix} 1\left(\frac{1}{2}\right) + (-1)(0) & 1(0) + (-1)(1) \\ 0\left(\frac{1}{2}\right) + 1(0) & 0(0) + 1(1) \\ \end{pmatrix} \\ &= \begin{pmatrix} \frac{1}{2} & -1 \\ 0 & 1 \\ \end{pmatrix} \end{aligned}$$
+$$
+\begin{aligned}
+H^{-1}S^{-1} &= \begin{pmatrix}
+1 & -1 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+\frac{1}{2} & 0 \\
+0 & 1
+\end{pmatrix} \\
+&= \begin{pmatrix}
+1\left(\frac{1}{2}\right) + (-1)(0) & 1(0) + (-1)(1) \\
+0\left(\frac{1}{2}\right) + 1(0) & 0(0) + 1(1)
+\end{pmatrix} \\
+&= \begin{pmatrix}
+\frac{1}{2} & -1 \\
+0 & 1
+\end{pmatrix}
+\end{aligned}
+$$
 
 Comparing the matrices confirms that $H^{-1}S^{-1} \neq S^{-1}H^{-1}$. The incorrect order yields a completely different matrix.
 

@@ -1,39 +1,40 @@
-### Exercise 9. Area and the Determinant
+### Exercise 8. Determinant of a Product
 
-The vectors
-
-$$u= \begin{pmatrix} 3 \\ 1 \\ \end{pmatrix},\qquad v= \begin{pmatrix} 1 \\ 4 \\ \end{pmatrix}$$
-
-span a parallelogram. Compute its area using a determinant. Then reverse the order of the vectors and explain what changes in the determinant and what does not change in the area.
+Let $A,B$ be square matrices such that $\det A=3$ and $\det B=-5$. Compute $\det(AB)$, $\det(BA)$ and, if it exists, $\det(A^{-1}B)$. Explain why the first two results are equal even though usually $AB\neq BA$.
 
 ### Solution
 
-**1. Compute the area using the determinant**
+**1. Compute $\det(AB)$ and $\det(BA)$**
 
-The area of the parallelogram spanned by two vectors in two-dimensional space is the absolute value of the determinant of the matrix formed by using the vectors as its columns. Let $A$ be this matrix:
+The determinant is multiplicative, meaning the determinant of a matrix product is the product of their determinants.
 
-$$A= \begin{pmatrix} 3 & 1 \\ 1 & 4 \\ \end{pmatrix}$$
+$$
+\det(AB) = \det A \cdot \det B = 3 \cdot (-5) = -15
+$$
 
-First, compute the determinant of $A$:
+Similarly, for the reverse product:
 
-$$\det A = 3 \cdot 4 - 1 \cdot 1 = 11$$
+$$
+\det(BA) = \det B \cdot \det A = (-5) \cdot 3 = -15
+$$
 
-The area is the absolute value of the determinant:
+**2. Compute $\det(A^{-1}B)$**
 
-$$\mathrm{Area} = \vert{}11\vert{} = 11$$
+Because $\det A = 3 \neq 0$, the matrix $A$ is invertible, meaning $A^{-1}$ exists. The determinant of an inverse matrix is the reciprocal of the original determinant.
 
-**2. Reverse the order of the vectors**
+$$
+\begin{aligned}
+\det(A^{-1}B) &= \det(A^{-1}) \cdot \det B \\
+&= \frac{1}{\det A} \cdot \det B \\
+&= \frac{1}{3} \cdot (-5) \\
+&= -\frac{5}{3}
+\end{aligned}
+$$
 
-Let $B$ be the matrix formed by placing $v$ as the first column and $u$ as the second column:
+**3. Explanation of equality**
 
-$$B= \begin{pmatrix} 1 & 3 \\ 4 & 1 \\ \end{pmatrix}$$
+While matrix multiplication itself is generally not commutative ($AB \neq BA$), the determinant function maps a square matrix to a single scalar number. Because the multiplication of real numbers is commutative, the order of the scalar factors does not matter:
 
-Compute the determinant of $B$:
-
-$$\det B = 1 \cdot 1 - 3 \cdot 4 = -11$$
-
-**3. Explanation of the changes**
-
-Reversing the order of the vectors is equivalent to swapping the two columns of the matrix. A fundamental property of determinants dictates that swapping two columns (or rows) multiplies the determinant by $-1$. Therefore, the determinant changes sign, from $11$ to $-11$.
-
-The geometric area, however, remains unchanged because it is defined as the absolute value of the determinant. Both $\vert{}11\vert{}$ and $\vert{}-11\vert{}$ yield $11$, reflecting that the physical area of the parallelogram does not depend on the order in which its defining vectors are listed.
+$$
+\det(AB) = \det A \cdot \det B = \det B \cdot \det A = \det(BA)
+$$

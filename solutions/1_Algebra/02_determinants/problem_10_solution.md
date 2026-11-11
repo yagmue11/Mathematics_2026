@@ -2,7 +2,13 @@
 
 Without carrying out a full determinant calculation, explain why
 
-$$\det \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 0 & 1 & 5 \\ \end{pmatrix}=0.$$
+$$
+\det \begin{pmatrix}
+1 & 2 & 3 \\
+2 & 4 & 6 \\
+0 & 1 & 5
+\end{pmatrix} = 0
+$$
 
 Identify a specific dependence between the rows and connect it with noninvertibility of the matrix.
 
@@ -12,11 +18,18 @@ Identify a specific dependence between the rows and connect it with noninvertibi
 
 Let the rows of the matrix be denoted as $R_1$, $R_2$, and $R_3$. Comparing the first two rows yields:
 
-$$\begin{aligned} R_1 &= (1, 2, 3) \\ R_2 &= (2, 4, 6) \end{aligned}$$
+$$
+\begin{aligned}
+R_1 &= (1, 2, 3) \\
+R_2 &= (2, 4, 6)
+\end{aligned}
+$$
 
 The second row is exactly twice the first row:
 
-$$R_2 = 2R_1$$
+$$
+R_2 = 2R_1
+$$
 
 **2. Explain why the determinant is zero**
 

@@ -2,7 +2,19 @@
 
 Given
 
-$$D= \begin{pmatrix} 2 & 0 & 0 \\ 0 & -3 & 0 \\ 0 & 0 & 5 \\ \end{pmatrix},\qquad E= \begin{pmatrix} 2 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 5 \\ \end{pmatrix}.$$
+$$
+D = \begin{pmatrix}
+2 & 0 & 0 \\
+0 & -3 & 0 \\
+0 & 0 & 5
+\end{pmatrix}
+,\qquad
+E = \begin{pmatrix}
+2 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 5
+\end{pmatrix}.
+$$
 
 Without using Gauss–Jordan elimination, decide which matrix is invertible. For the invertible matrix, give the inverse and check the result by multiplication.
 
@@ -20,12 +32,41 @@ For matrix $E$, the second diagonal entry is $0$. Therefore, $E$ is not invertib
 
 The inverse of an invertible diagonal matrix is obtained by replacing each main diagonal entry with its reciprocal:
 
-$$D^{-1}= \begin{pmatrix} \frac{1}{2} & 0 & 0 \\ 0 & -\frac{1}{3} & 0 \\ 0 & 0 & \frac{1}{5} \\ \end{pmatrix}$$
+$$
+D^{-1} = \begin{pmatrix}
+\frac{1}{2} & 0 & 0 \\
+0 & -\frac{1}{3} & 0 \\
+0 & 0 & \frac{1}{5}
+\end{pmatrix}
+$$
 
 **3. Check the result by multiplication**
 
 Compute the product $DD^{-1}$ to verify it yields the identity matrix $I$.
 
-$$\begin{aligned} DD^{-1} &= \begin{pmatrix} 2 & 0 & 0 \\ 0 & -3 & 0 \\ 0 & 0 & 5 \\ \end{pmatrix} \begin{pmatrix} \frac{1}{2} & 0 & 0 \\ 0 & -\frac{1}{3} & 0 \\ 0 & 0 & \frac{1}{5} \\ \end{pmatrix} \\ &= \begin{pmatrix} 2\left(\frac{1}{2}\right) & 0 & 0 \\ 0 & -3\left(-\frac{1}{3}\right) & 0 \\ 0 & 0 & 5\left(\frac{1}{5}\right) \\ \end{pmatrix} \\ &= \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{pmatrix} \end{aligned}$$
+$$
+\begin{aligned}
+DD^{-1} &= \begin{pmatrix}
+2 & 0 & 0 \\
+0 & -3 & 0 \\
+0 & 0 & 5
+\end{pmatrix}
+\begin{pmatrix}
+\frac{1}{2} & 0 & 0 \\
+0 & -\frac{1}{3} & 0 \\
+0 & 0 & \frac{1}{5}
+\end{pmatrix} \\
+&= \begin{pmatrix}
+2\left(\frac{1}{2}\right) & 0 & 0 \\
+0 & -3\left(-\frac{1}{3}\right) & 0 \\
+0 & 0 & 5\left(\frac{1}{5}\right)
+\end{pmatrix} \\
+&= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+\end{aligned}
+$$
 
 Because $DD^{-1} = I$, the computed inverse is verified as correct.

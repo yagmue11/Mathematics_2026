@@ -1,4 +1,27 @@
 ### Exercise 14. A Small Change in the Right-Hand Side
+Compare the systems
+
+$$
+\begin{cases}
+x+y=2, \\
+2x-y=1, \\
+3x=3
+\end{cases}
+$$
+
+and
+
+$$
+\begin{cases}
+x+y=2, \\
+2x-y=1, \\
+3x=3.1.
+\end{cases}
+$$
+
+Check the consistency of each system and explain why a small change in one number can change the type of the system.
+
+### Exercise 14. Solution
 
 Adding the first two equations, which are the same in both systems, gives
 
